@@ -7,4 +7,9 @@ public class solution1 {
         int answer = num1 - num2;
         return answer;
     }
+
+    public static void main(String[] args) {
+        System.out.println(new solution1().solution(2, 3));
+        System.out.println(new solution1().solution(100, 2));
+    }
 }
