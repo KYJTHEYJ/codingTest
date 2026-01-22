@@ -1,0 +1,32 @@
+package problems.programmers;
+
+/*
+정수 n이 주어질 때, n이하의 짝수를 모두 더한 값을 return 하도록 solution 함수를 작성해주세요.
+ */
+
+public class solution9 {
+
+    public int solution(int n) {
+        int answer = 0;
+
+        //for (int index = 1; index <= n; index++) {
+        //    if (index % 2 == 0) {
+        //        answer += index;
+        //    }
+        //}
+
+        int index = 0;
+        while(index <= n) {
+            if (index % 2 == 0) {
+                answer += index;
+            }
+            index++;
+        }
+
+        return answer;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new solution9().solution(4));
+    }
+}
